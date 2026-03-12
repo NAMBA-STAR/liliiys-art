@@ -1214,6 +1214,13 @@ section {
     font-size: 48px;
 }
 
+/* Use the default LINE brand green for logo display */
+.line-cta-title .fa-line,
+.contact-info-icon .fa-line,
+.footer-social .fa-line {
+    color: #06C755;
+}
+
 .line-cta-subtitle {
     font-size: 18px;
     line-height: 1.8;
@@ -1244,6 +1251,20 @@ section {
 
 .line-cta-button-wrapper {
     text-align: center;
+}
+
+/* Enlarge official LINE add-friend plugin button */
+.line-cta-button-wrapper .line-it-button {
+    display: inline-block !important;
+    transform: scale(1.8);
+    transform-origin: center;
+    margin: 14px 0 10px;
+}
+
+/* Fallback size when JavaScript is disabled */
+.line-cta-button-wrapper noscript img {
+    height: 54px;
+    width: auto;
 }
 
 .line-button {
