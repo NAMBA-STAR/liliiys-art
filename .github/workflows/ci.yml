@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate required files
+        run: |
+          test -f index.html
+          test -f wax-product.html
+          test -f css/style.css
+          test -f css/wax-product.css
+          test -f js/script.js
+          test -f js/wax-product.js
