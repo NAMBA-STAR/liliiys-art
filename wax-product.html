@@ -1,49 +1,31 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="眉毛専門スクールが開発したプロフェッショナル向けワックス。低温融解・松脂フリーで安全性と扱いやすさを追求。">
-    <title>プロフェッショナルワックス | Lilly's art Shirokanedai</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
-    <link rel="shortcut icon" href="images/favicon.png">
-    
-    <!-- Google Fonts -->
+    <meta name="description" content="眉毛専門サロンが開発したプロフェッショナル向けワックス。低温融解・松脂フリーで安全性と扱いやすさを追求。">
+    <title>プロフェッショナルワックス WAX | 眉毛専門サロン開発</title>
+    <link rel="stylesheet" href="css/wax-product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- AOS Animation Library -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/wax-product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
+    <!-- ヘッダー/ナビゲーション -->
     <header class="header" id="header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="index.html" style="text-decoration: none; color: inherit;">
-                        <h1>Lilly's art<br><span>Shirokanedai</span></h1>
-                    </a>
+                    <h1>WAX<span>PRO</span></h1>
                 </div>
                 <nav class="nav" id="nav">
                     <ul class="nav-list">
-                        <li><a href="index.html">トップ</a></li>
-                        <li><a href="index.html#about">スクールについて</a></li>
-                        <li><a href="index.html#courses">コース案内</a></li>
-                        <li><a href="wax-product.html" class="active">WAX製品</a></li>
-                        <li><a href="index.html#contact" class="btn-nav">お問い合わせ</a></li>
+                        <li><a href="#home" class="nav-link">ホーム</a></li>
+                        <li><a href="#features" class="nav-link">特徴</a></li>
+                        <li><a href="#comparison" class="nav-link">比較</a></li>
+                        <li><a href="#faq" class="nav-link">FAQ</a></li>
+                        <li><a href="#contact" class="nav-link">お問合せ</a></li>
                     </ul>
                 </nav>
                 <button class="hamburger" id="hamburger">
@@ -55,142 +37,165 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="wax-hero">
-        <div class="wax-hero-overlay"></div>
+    <!-- ヒーローセクション -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <div class="wax-hero-content" data-aos="fade-up">
-                <p class="wax-hero-subtitle">Lilly's art Shirokanedai開発</p>
-                <h2 class="wax-hero-title">プロフェッショナル<br>ワックス</h2>
-                <p class="wax-hero-description">
-                    低温融解 × 松脂フリー<br>
-                    安全性と扱いやすさを追求した、プロのためのワックス
-                </p>
-                <div class="wax-hero-buttons">
-                    <a href="#features" class="btn btn-primary">特徴を見る</a>
-                    <a href="#contact" class="btn btn-secondary">お問い合わせ</a>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">
+                        眉毛専門サロンが開発した<br>プロフェッショナル向けワックス<br>
+                        <span class="highlight">ついに登場！</span>
+                    </h2>
+                    <p class="hero-subtitle">
+                        "左右1ミリも狂わない"施術を支える安全性と扱いやすさを追求
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#features" class="btn btn-primary">詳細を見る</a>
+                        <a href="#contact" class="btn btn-secondary">お問い合わせ</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="product-mockup">
+                        <img src="https://sspark.genspark.ai/cfimages?u1=7PVa82MNlUUjfc2S20zNfWYjsbCaPSvp5SudJLgZsbTaSusbj%2BDRvS08DL%2BOwxc%2BL9LV7PkDgzUdwCYMGNtN4c4NV1T1sGK6acz8wVsuWZE3WSkdkJiRGmCmoTFqEl85AE5TMHT5MNpYWNqTiNhTRaxgdjARBsvnlg%3D%3D&u2=P5kTk8cU78S2D7At&width=2560" alt="笑顔の日本人女性 美容プロフェッショナル" class="hero-product-image">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="scroll-indicator">
-            <span>SCROLL</span>
-            <div class="scroll-line"></div>
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
-    <!-- Problems Section -->
-    <section class="wax-problems">
+    <!-- 問題提起セクション -->
+    <section class="problems" id="problems">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <p class="section-subtitle">Problems</p>
-                <h2 class="section-title">サロン施術で、<br class="sp-only">こんなお悩みありませんか？</h2>
+            <div class="section-header">
+                <h2 class="section-title">サロン施術で、こんなお悩みありませんか？</h2>
             </div>
-            <div class="wax-problems-grid">
-                <div class="wax-problem-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="wax-problem-icon">
+            <div class="problems-grid">
+                <div class="problem-card fade-in">
+                    <div class="problem-icon">
                         <i class="fas fa-exclamation-triangle"></i>
                     </div>
                     <h3>赤みが出やすい</h3>
                     <p>お客様の肌質によって赤みが出やすく、対応に困っている</p>
                 </div>
-                <div class="wax-problem-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="wax-problem-icon">
+                <div class="problem-card fade-in">
+                    <div class="problem-icon">
                         <i class="fas fa-band-aid"></i>
                     </div>
                     <h3>表皮剥離のリスク</h3>
                     <p>高温のワックスで表皮剥離が起こるリスクが怖い</p>
                 </div>
-                <div class="wax-problem-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="wax-problem-icon">
+                <div class="problem-card fade-in">
+                    <div class="problem-icon">
                         <i class="fas fa-user-graduate"></i>
                     </div>
                     <h3>新人教育に時間</h3>
                     <p>新人スタッフの教育に時間がかかり、なかなか戦力にならない</p>
                 </div>
-                <div class="wax-problem-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="wax-problem-icon">
+                <div class="problem-card fade-in">
+                    <div class="problem-icon">
                         <i class="fas fa-allergies"></i>
                     </div>
                     <h3>アレルギー対応</h3>
                     <p>松脂アレルギーのお客様への対応が難しい</p>
                 </div>
+                <div class="problem-card fade-in">
+                    <div class="problem-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3>小ロット仕入れ不可</h3>
+                    <p>大量購入が必要で、初めての導入に踏み切れない</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="wax-features" id="features">
+    <!-- 製品特徴セクション（USP） -->
+    <section class="features" id="features">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <p class="section-subtitle">Features</p>
-                <h2 class="section-title">選ばれる<span class="highlight">5つの理由</span></h2>
-                <p class="section-description">プロフェッショナルのために開発された、安全性と扱いやすさ</p>
+            <div class="section-header">
+                <h2 class="section-title">WAXPROが選ばれる<span class="highlight">5つの理由</span></h2>
+                <p class="section-subtitle">プロフェッショナルのために開発された、史上最高の安全性と扱いやすさ</p>
             </div>
-            <div class="wax-features-grid">
-                <div class="wax-feature-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="wax-feature-icon">
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
                         <i class="fas fa-temperature-low"></i>
                     </div>
-                    <div class="wax-feature-badge">45-50°C</div>
-                    <h3>低温融解</h3>
-                    <p>45〜50度で溶けるため、表皮剥離のリスクを最小限に抑えます。赤みが出やすいお肌の方も安心してご利用いただけます。</p>
-                    <ul class="wax-feature-points">
+                    <h3 class="feature-title">1. 低温融解</h3>
+                    <div class="feature-badge">45-50°C</div>
+                    <p class="feature-description">
+                        赤みが出やすいお肌質の方も使える。45〜50度で溶けるため、表皮剥離のリスクが最小限に抑えられます。
+                    </p>
+                    <ul class="feature-points">
                         <li><i class="fas fa-check"></i> 火傷リスク低減</li>
                         <li><i class="fas fa-check"></i> 敏感肌対応</li>
                         <li><i class="fas fa-check"></i> 安全性重視</li>
                     </ul>
                 </div>
 
-                <div class="wax-feature-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="wax-feature-icon">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
                         <i class="fas fa-leaf"></i>
                     </div>
-                    <div class="wax-feature-badge">ロジンフリー</div>
-                    <h3>松脂フリー</h3>
-                    <p>松脂（ロジン）フリーでもしっかり取れる革新的な配合。アレルギー反応が出にくい処方を実現しました。</p>
-                    <ul class="wax-feature-points">
+                    <h3 class="feature-title">2. 松脂フリー</h3>
+                    <div class="feature-badge">ロジンフリー</div>
+                    <p class="feature-description">
+                        アレルギー反応が出にくい処方。松脂（ロジン）フリーでもしっかり取れる革新的な配合を実現しました。
+                    </p>
+                    <ul class="feature-points">
                         <li><i class="fas fa-check"></i> アレルギー対応</li>
                         <li><i class="fas fa-check"></i> 肌に優しい</li>
                         <li><i class="fas fa-check"></i> しっかり脱毛</li>
                     </ul>
                 </div>
 
-                <div class="wax-feature-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="wax-feature-icon">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
                         <i class="fas fa-hand-sparkles"></i>
                     </div>
-                    <div class="wax-feature-badge">新人でも◎</div>
-                    <h3>取扱簡単</h3>
-                    <p>よく伸び、お肌にしっかり密着するテクスチャー。新人スタッフでも扱いやすく、施術の失敗が激減します。</p>
-                    <ul class="wax-feature-points">
+                    <h3 class="feature-title">3. 取扱簡単</h3>
+                    <div class="feature-badge">新人でも◎</div>
+                    <p class="feature-description">
+                        新人でも扱いやすいテクスチャー。よく伸び、お肌にしっかり密着するため、施術の失敗が激減します。
+                    </p>
+                    <ul class="feature-points">
                         <li><i class="fas fa-check"></i> 教育時間短縮</li>
                         <li><i class="fas fa-check"></i> 扱いやすい</li>
                         <li><i class="fas fa-check"></i> 失敗が少ない</li>
                     </ul>
                 </div>
 
-                <div class="wax-feature-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="wax-feature-icon">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
                         <i class="fas fa-user-md"></i>
                     </div>
-                    <div class="wax-feature-badge">2000名の経験</div>
-                    <h3>施術者が開発</h3>
-                    <p>累計2000名の施術経験をベースに開発。現場の声を徹底的に反映した、プロフェッショナル仕様です。</p>
-                    <ul class="wax-feature-points">
+                    <h3 class="feature-title">4. 施術者が開発</h3>
+                    <div class="feature-badge">2000名の経験</div>
+                    <p class="feature-description">
+                        累計担当数2000名の施術経験をベースに開発。現場の声を徹底的に反映した、史上最高の扱いやすさと安全性を実現。
+                    </p>
+                    <ul class="feature-points">
                         <li><i class="fas fa-check"></i> 現場目線</li>
                         <li><i class="fas fa-check"></i> 実践的</li>
                         <li><i class="fas fa-check"></i> プロ仕様</li>
                     </ul>
                 </div>
 
-                <div class="wax-feature-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="wax-feature-icon">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
                         <i class="fas fa-shopping-cart"></i>
                     </div>
-                    <div class="wax-feature-badge">100gから</div>
-                    <h3>小ロット購入OK</h3>
-                    <p>100gから注文可能。初めての導入も安心してお試しいただけます。リスクなくスタートできます。</p>
-                    <ul class="wax-feature-points">
+                    <h3 class="feature-title">5. 小ロット購入OK</h3>
+                    <div class="feature-badge">100gから</div>
+                    <p class="feature-description">
+                        100gから注文可能。初めての導入も安心してお試しいただけます。少量から始められるので、リスクなくスタートできます。
+                    </p>
+                    <ul class="feature-points">
                         <li><i class="fas fa-check"></i> 低リスク導入</li>
                         <li><i class="fas fa-check"></i> 在庫負担軽減</li>
                         <li><i class="fas fa-check"></i> 試しやすい</li>
@@ -200,47 +205,131 @@
         </div>
     </section>
 
-    <!-- Results Section -->
-    <section class="wax-results">
+    <!-- ビフォー・アフター / 実績セクション -->
+    <section class="results">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <p class="section-subtitle">Results</p>
+            <div class="section-header">
                 <h2 class="section-title">プロフェッショナルが認める仕上がり</h2>
-                <p class="section-description">細かい産毛や毛穴汚れがごっそり取れる</p>
+                <p class="section-subtitle">細かい産毛や毛穴汚れがごっそり取れる</p>
             </div>
-            <div class="wax-results-grid">
-                <div class="wax-result-card" data-aos="fade-up">
-                    <div class="wax-result-image">
-                        <img src="images/treatment.jpg" alt="眉ワックス施術の仕上がり">
+            <div class="results-grid">
+                <div class="result-card fade-in">
+                    <div class="result-image">
+                        <img src="https://sspark.genspark.ai/cfimages?u1=sSmZMlJzcktvMOLanNB0NBPykqVcK9u8qgPddA410Wk2Q8hZZL1%2FndlctxWvJA3HywZWCrAhqkLQoo%2B6Hbn6l5k%2BM6zLy04B67aprdBknSuvLMX1kwMk6xqaxzthOjim&u2=E%2Bf0V7tnje8oaGhp&width=2560" alt="眉ワックス施術Before/After" class="result-ba-image">
                     </div>
-                    <p>眉周りの産毛がすっきり。赤みも最小限に抑えられています。</p>
+                    <p class="result-description">眉周りの産毛がすっきり。赤みも最小限に抑えられています。</p>
                 </div>
-                <div class="wax-result-card" data-aos="fade-up">
-                    <div class="wax-result-image">
-                        <img src="images/about.jpg" alt="プロフェッショナルな施術">
+
+                <div class="result-card fade-in">
+                    <div class="result-image">
+                        <img src="images/eyebrow-before-after.jpg" alt="眉毛施術の仕上がり BEFORE/AFTER" class="result-ba-image">
                     </div>
-                    <p>美しい眉の形を作る。プロフェッショナルな仕上がり。</p>
+                    <p class="result-description">美しい眉の形を作る。プロフェッショナルな仕上がり。</p>
+                </div>
+
+                <div class="result-card fade-in">
+                    <div class="result-image">
+                        <img src="https://sspark.genspark.ai/cfimages?u1=NX9Hx6XiHLcdXGUnOaRW%2BRZBrJ54rOr57HmIemXpFc2aeelDp9WzFcaAu1dU5mlhozAaz%2B0cU4OpMFypHDGti%2FnsRv%2BJhbBcFy4p9Ciii5KBryOzJUHZT%2BQ%2B&u2=Vf%2FJWG3Z8SnVFyDr&width=2560" alt="眉ワックス施術" class="result-ba-image">
+                    </div>
+                    <p class="result-description">細かい産毛も根こそぎ除去。ツルツルの仕上がり。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Product Detail Section -->
-    <section class="wax-product-detail">
+    <!-- 他社比較セクション -->
+    <section class="comparison" id="comparison">
         <div class="container">
-            <div class="wax-product-grid">
-                <div class="wax-product-image" data-aos="fade-right">
-                    <div class="image-placeholder">
-                        <i class="fas fa-box-open"></i>
-                        <p>製品画像</p>
+            <div class="section-header">
+                <h2 class="section-title">他社製品との比較</h2>
+                <p class="section-subtitle">圧倒的な優位性を実現</p>
+            </div>
+            <div class="comparison-table-wrapper fade-in">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th class="item-column">項目</th>
+                            <th>A社</th>
+                            <th>B社</th>
+                            <th class="our-column">WAXPRO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="item-column">融解温度</td>
+                            <td>60-70°C</td>
+                            <td>55-65°C</td>
+                            <td class="our-column">
+                                <strong>45-50°C</strong>
+                                <i class="fas fa-check-circle"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="item-column">松脂成分</td>
+                            <td>含む</td>
+                            <td>含む</td>
+                            <td class="our-column">
+                                <strong>フリー</strong>
+                                <i class="fas fa-check-circle"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="item-column">赤み発生</td>
+                            <td>あり</td>
+                            <td>あり</td>
+                            <td class="our-column">
+                                <strong>最小限</strong>
+                                <i class="fas fa-check-circle"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="item-column">扱いやすさ</td>
+                            <td>普通</td>
+                            <td>やや難</td>
+                            <td class="our-column">
+                                <strong>簡単</strong>
+                                <i class="fas fa-check-circle"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="item-column">最小ロット</td>
+                            <td>500g</td>
+                            <td>300g</td>
+                            <td class="our-column">
+                                <strong>100g</strong>
+                                <i class="fas fa-check-circle"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="item-column">開発者</td>
+                            <td>メーカー</td>
+                            <td>メーカー</td>
+                            <td class="our-column">
+                                <strong>施術者</strong>
+                                <i class="fas fa-check-circle"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 製品詳細セクション -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-grid">
+                <div class="product-image-section fade-in">
+                    <div class="product-image-wrapper">
+                        <img src="https://sspark.genspark.ai/cfimages?u1=qWcM6X57G41emIcxLZK4fvqhHuuM31CIDmBCqICp979Tsp8I2HwJyOlKLq7vFGyK3bDB9xpswCAP42yNF%2Bj6hUi9NK1jU8mR5dkosPJq3iGQXZSmfxxeFSGk7oA%2FHUFbeTzHHV%2Bmlw%3D%3D&u2=ZeHeoKTASv7ZHlli&width=2560" alt="WAXPRO製品パッケージ" class="product-detail-image">
                     </div>
                 </div>
-                <div class="wax-product-info" data-aos="fade-left">
-                    <h2>製品詳細</h2>
+                <div class="product-info-section fade-in">
+                    <h2 class="product-detail-title">製品詳細</h2>
                     
-                    <div class="wax-product-specs">
+                    <div class="product-specs">
                         <h3><i class="fas fa-clipboard-list"></i> 製品スペック</h3>
-                        <ul>
+                        <ul class="specs-list">
                             <li><span class="spec-label">内容量:</span> <span class="spec-value">100g / 500g / 1kg</span></li>
                             <li><span class="spec-label">融解温度:</span> <span class="spec-value">45-50°C</span></li>
                             <li><span class="spec-label">主成分:</span> <span class="spec-value">天然樹脂、エステル樹脂、ミツロウ</span></li>
@@ -250,9 +339,9 @@
                         </ul>
                     </div>
 
-                    <div class="wax-product-recommend">
+                    <div class="product-recommend">
                         <h3><i class="fas fa-heart"></i> こんな方におすすめ</h3>
-                        <ul>
+                        <ul class="recommend-list">
                             <li><i class="fas fa-check"></i> 敏感肌のお客様が多いサロン</li>
                             <li><i class="fas fa-check"></i> 新人スタッフの育成中</li>
                             <li><i class="fas fa-check"></i> 安全性を最優先したい</li>
@@ -260,99 +349,230 @@
                             <li><i class="fas fa-check"></i> 小ロットで試したい</li>
                         </ul>
                     </div>
-
-                    <a href="#contact" class="btn btn-primary">お問い合わせ</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Developer Story Section -->
-    <section class="wax-developer">
+    <!-- 開発者の想い -->
+    <section class="developer-story">
         <div class="container">
-            <div class="wax-developer-grid">
-                <div class="wax-developer-image" data-aos="fade-right">
-                    <img src="images/instructor.jpg" alt="開発者 渋谷さおり">
+            <div class="developer-content">
+                <div class="developer-image-section fade-in">
+                    <div class="developer-image-wrapper">
+                        <img src="images/developer-saori-shibuya.jpg" alt="WAXPRO開発者 澁谷さおり" class="developer-image">
+                    </div>
                 </div>
-                <div class="wax-developer-text" data-aos="fade-left">
-                    <h2>施術者が開発したから、<br>現場のリアルな声が詰まっています</h2>
-                    <p>
+                <div class="developer-text-section fade-in">
+                    <h2 class="section-title">施術者が開発したから、<br>現場のリアルな声が詰まっています</h2>
+                    <p class="developer-description">
                         「なぜ、お客様の肌に赤みが出てしまうのか」<br>
                         「どうすれば新人スタッフでも安全に施術できるのか」
                     </p>
-                    <p>
-                        2000名以上の施術経験を持つプロフェッショナルが、
+                    <p class="developer-description">
+                        2000名以上の施術経験を持つプロフェッショナルが、<br>
                         現場で感じた課題をひとつひとつ解決するために開発しました。
                     </p>
-                    <blockquote>
+                    <p class="developer-highlight">
                         <i class="fas fa-quote-left"></i>
-                        安全性と扱いやすさを追求した製品開発への想いが、
-                        プロフェッショナルな施術を支えます。
+                        「左右1ミリも狂わない」施術を支えるのは、<br>
+                        安全性と扱いやすさを追求した製品開発への想いです。
                         <i class="fas fa-quote-right"></i>
-                    </blockquote>
-                    <div class="wax-developer-signature">
-                        <p class="developer-name">渋谷 さおり</p>
-                        <p class="developer-title">Lilly's art Shirokanedai 代表</p>
+                    </p>
+                    <div class="developer-signature">
+                        <p class="developer-name">澁谷 さおり</p>
+                        <p class="developer-title">株式会社independence 代表取締役</p>
+                        <p class="developer-company">眉毛専門サロン 施術者 / WAXPRO開発者</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="wax-faq">
+    <!-- お客様の声 / 導入実績 -->
+    <section class="testimonials">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <p class="section-subtitle">FAQ</p>
-                <h2 class="section-title">よくある質問</h2>
+            <div class="section-header">
+                <h2 class="section-title">導入サロン様の声</h2>
+                <p class="section-subtitle">多くのプロフェッショナルにご愛用いただいています</p>
             </div>
-            <div class="wax-faq-list">
-                <div class="wax-faq-item" data-aos="fade-up">
-                    <button class="wax-faq-question">
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        「新人スタッフでも失敗なく使えています！低温で溶けるので安全性が高く、お客様からのクレームもゼロになりました。」
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-icon">
+                            <img src="https://sspark.genspark.ai/cfimages?u1=Zf0CEA48hWdAKDmyisISBtLNt22JDPDWqgjutQgX08QhO%2B0YjGaLPvaAKFQFlrUZqynvQKgakjG6E6AdNfhDq2O1lpO3UnUZRgux1bNdBAj4&u2=gHhOfGMEbQDD40%2Br&width=2560" alt="サロンオーナー" class="author-avatar">
+                        </div>
+                        <div class="author-info">
+                            <p class="author-name">東京都 Aサロン様</p>
+                            <p class="author-position">オーナー</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        「赤みが出にくく、お客様の満足度が上がりました。松脂フリーなのでアレルギーの方にも安心して使えます。」
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-icon">
+                            <img src="https://sspark.genspark.ai/cfimages?u1=SIN3XCXuRJaP%2BOYmTkvj91%2BPd57vWIWJChNTxyTN3dmjqYDCi%2FvdXznrFBPp5ne2XXNpZCQbzRymK4l%2BSfygEFHpqSM8S6kbXCN5aNdebEgKcA%3D%3D&u2=Y7Y9aEYq9pzp%2BpLo&width=2560" alt="サロン店長" class="author-avatar">
+                        </div>
+                        <div class="author-info">
+                            <p class="author-name">大阪府 Bサロン様</p>
+                            <p class="author-position">店長</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        「100gから購入できるので、初めての導入でもリスクが少なく助かりました。テクスチャーが扱いやすくて本当に使いやすいです！」
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-icon">
+                            <img src="https://sspark.genspark.ai/cfimages?u1=%2BQByeFKyQb0Hyj32WlILD7Wffdy8h%2BrDyQncgSAeo2xlJyeEQ6SonkHXsOgx0ahvmjDtE3MyNbUHoDodaL6yq3dJuVTDZhOvIDjricqY%2BM8FRQ%3D%3D&u2=6olt8Px%2F9F8yfSOV&width=2560" alt="美容施術者" class="author-avatar">
+                        </div>
+                        <div class="author-info">
+                            <p class="author-name">福岡県 Cサロン様</p>
+                            <p class="author-position">施術者</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LINE登録CTA -->
+    <section class="line-cta">
+        <div class="container">
+            <div class="line-cta-content fade-in">
+                <div class="line-cta-image">
+                    <img src="https://sspark.genspark.ai/cfimages?u1=Og%2FtUjBmJq7c%2BPsJvtKI%2FvuIpNygx4Qp5F%2BQwwjHx%2Fj8rJj%2B1AjkzFDJVeRzXN2EvOAN5RfMn46UpYXCEiSPU97teF8DlQOkkOSdKg3gPxjjxw%3D%3D&u2=YR1Q3WwCtmWIxoI0&width=2560" alt="笑顔のお客様" class="line-cta-woman">
+                </div>
+                <div class="line-cta-text">
+                    <h2 class="line-cta-title">
+                        <i class="fab fa-line"></i>
+                        LINEで詳細情報を受け取る
+                    </h2>
+                    <p class="line-cta-subtitle">
+                        製品の詳細情報、サンプル請求、お得なキャンペーン情報をLINEで配信しています
+                    </p>
+                    <ul class="line-benefits">
+                        <li><i class="fas fa-check"></i> サンプル請求が簡単</li>
+                        <li><i class="fas fa-check"></i> 導入事例の閲覧</li>
+                        <li><i class="fas fa-check"></i> お得なキャンペーン情報</li>
+                        <li><i class="fas fa-check"></i> 施術のコツを配信</li>
+                    </ul>
+                </div>
+                <div class="line-cta-button-wrapper">
+                    <a href="#" class="line-button" target="_blank">
+                        <i class="fab fa-line"></i>
+                        <span>友だち追加</span>
+                    </a>
+                    <p class="line-cta-note">※外部サイト（LINE）へ移動します</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ（よくある質問） -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">よくある質問</h2>
+                <p class="section-subtitle">導入前の疑問にお答えします</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
                         <span>最小注文数量はどのくらいですか？</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
-                    <div class="wax-faq-answer">
+                    <div class="faq-answer">
                         <p>100gから注文可能です。初めての導入でも安心してお試しいただけます。500g、1kgのお得なサイズもご用意しております。</p>
                     </div>
                 </div>
 
-                <div class="wax-faq-item" data-aos="fade-up">
-                    <button class="wax-faq-question">
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
                         <span>サンプルは提供していますか？</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
-                    <div class="wax-faq-answer">
-                        <p>はい、お問い合わせフォームからサンプル請求が可能です。実際に使用感をお試しいただいてからの導入をおすすめしております。</p>
+                    <div class="faq-answer">
+                        <p>はい、LINEまたはお問い合わせフォームからサンプル請求が可能です。実際に使用感をお試しいただいてからの導入をおすすめしております。</p>
                     </div>
                 </div>
 
-                <div class="wax-faq-item" data-aos="fade-up">
-                    <button class="wax-faq-question">
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
                         <span>配送期間はどのくらいですか？</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
-                    <div class="wax-faq-answer">
+                    <div class="faq-answer">
                         <p>通常、ご注文確認後3-5営業日でお届けします。在庫状況により前後する場合がございますので、お急ぎの場合はお問い合わせください。</p>
                     </div>
                 </div>
 
-                <div class="wax-faq-item" data-aos="fade-up">
-                    <button class="wax-faq-question">
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>支払い方法は何がありますか？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>銀行振込、請求書払い（法人様のみ）に対応しております。初回のご注文は前払いをお願いしておりますが、2回目以降は月末締め翌月末払いも可能です。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
                         <span>使用期限はありますか？</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
-                    <div class="wax-faq-answer">
+                    <div class="faq-answer">
                         <p>未開封の状態で製造日より2年です。開封後は6ヶ月以内にご使用いただくことをおすすめしております。直射日光を避け、常温で保管してください。</p>
                     </div>
                 </div>
 
-                <div class="wax-faq-item" data-aos="fade-up">
-                    <button class="wax-faq-question">
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>施術研修やサポートはありますか？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>はい、導入サロン様向けに無料のオンライン研修を実施しております。また、LINEでの施術相談も随時受け付けておりますので、お気軽にご相談ください。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
                         <span>返品・交換は可能ですか？</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
-                    <div class="wax-faq-answer">
+                    <div class="faq-answer">
                         <p>未開封の場合に限り、到着後7日以内であれば返品・交換が可能です。不良品や配送中の破損の場合は、無償で交換させていただきます。</p>
                     </div>
                 </div>
@@ -360,22 +580,18 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- お問い合わせフォーム -->
     <section class="contact" id="contact">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <p class="section-subtitle">Contact</p>
+            <div class="section-header">
                 <h2 class="section-title">お問い合わせ</h2>
-                <p class="section-description">
-                    製品に関するご質問、サンプル請求は<br class="sp-only">
-                    こちらのフォームからお気軽にどうぞ
-                </p>
+                <p class="section-subtitle">ご質問・サンプル請求はこちらから</p>
             </div>
-            <div class="contact-content">
-                <form class="contact-form" data-aos="fade-up" id="contactForm">
+            <div class="contact-wrapper">
+                <form class="contact-form fade-in" id="contactForm">
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="salonName">サロン名・会社名 <span class="required">*</span></label>
+                            <label for="salonName">サロン名 <span class="required">*</span></label>
                             <input type="text" id="salonName" name="salonName" required>
                         </div>
                         <div class="form-group">
@@ -383,93 +599,137 @@
                             <input type="text" id="name" name="name" required>
                         </div>
                     </div>
+
                     <div class="form-row">
                         <div class="form-group">
                             <label for="email">メールアドレス <span class="required">*</span></label>
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">電話番号</label>
-                            <input type="tel" id="phone" name="phone">
+                            <label for="phone">電話番号 <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" required>
                         </div>
                     </div>
+
                     <div class="form-group">
                         <label for="message">お問い合わせ内容 <span class="required">*</span></label>
                         <textarea id="message" name="message" rows="6" required></textarea>
                     </div>
-                    <div class="form-privacy">
+
+                    <div class="form-group checkbox-group">
                         <label class="checkbox-label">
-                            <input type="checkbox" name="sample">
-                            <span>サンプル請求を希望する（無料）</span>
+                            <input type="checkbox" id="sample" name="sample">
+                            <span class="checkbox-custom"></span>
+                            サンプル請求を希望する（無料）
                         </label>
                     </div>
-                    <div class="form-privacy">
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="privacy" required>
-                            <span>プライバシーポリシーに同意します</span>
-                        </label>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i>
+                            送信する
+                        </button>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-submit">
-                        送信する
-                    </button>
+
+                    <div class="form-message" id="formMessage"></div>
                 </form>
+
+                <div class="contact-info fade-in">
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>お電話でのお問い合わせ</h3>
+                        <p class="contact-info-detail">0120-XXX-XXX</p>
+                        <p class="contact-info-note">受付時間：平日 10:00-18:00</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>メールでのお問い合わせ</h3>
+                        <p class="contact-info-detail">info@waxpro.com</p>
+                        <p class="contact-info-note">24時間受付（返信は営業時間内）</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <i class="fab fa-line"></i>
+                        </div>
+                        <h3>LINE公式アカウント</h3>
+                        <p class="contact-info-detail">@waxpro</p>
+                        <p class="contact-info-note">お気軽にメッセージをお送りください</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- フッター -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-about">
-                    <h3 class="footer-logo">Lilly's art<br><span>Shirokanedai</span></h3>
-                    <p>
-                        東京都白金台のアイブロウスクール。<br>
-                        眉で人生が変わる。<br>
-                        プロのアイブロウ技術者を育成する<br>
-                        少人数制専門スクールです。
+                <div class="footer-section">
+                    <h3 class="footer-logo">WAX<span>PRO</span></h3>
+                    <p class="footer-description">
+                        眉毛専門サロンが開発した<br>
+                        プロフェッショナル向けワックス
                     </p>
                 </div>
-                <div class="footer-links">
-                    <h4>リンク</h4>
-                    <ul>
-                        <li><a href="index.html">トップページ</a></li>
-                        <li><a href="index.html#about">スクールについて</a></li>
-                        <li><a href="index.html#courses">コース案内</a></li>
-                        <li><a href="wax-product.html">WAX製品</a></li>
-                        <li><a href="index.html#contact">お問い合わせ</a></li>
+
+                <div class="footer-section">
+                    <h4>製品情報</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">製品の特徴</a></li>
+                        <li><a href="#comparison">他社比較</a></li>
+                        <li><a href="#faq">よくある質問</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
                     </ul>
                 </div>
-                <div class="footer-contact">
-                    <h4>お問い合わせ</h4>
-                    <p>
-                        <i class="fas fa-map-marker-alt"></i>
-                        東京都港区白金台3-7-10<br>
-                        Halelea白金台 7号室
-                    </p>
-                    <p>
-                        <i class="fas fa-clock"></i>
-                        10:00 - 18:00<br>
-                        (月曜日・祝日定休)
-                    </p>
+
+                <div class="footer-section">
+                    <h4>会社情報</h4>
+                    <ul class="footer-info">
+                        <li><i class="fas fa-building"></i> 株式会社independence</li>
+                        <li><i class="fas fa-user"></i> 代表取締役　澁谷 さおり</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 〒108-0071 東京都港区白金台3-7-10</li>
+                        <li style="padding-left: 28px;">Halelea白金台7号室</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>フォローする</h4>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-line"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2024 Lilly's art Shirokanedai. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">プライバシーポリシー</a>
+                    <span class="separator">|</span>
+                    <a href="#">特定商取引法に基づく表記</a>
+                    <span class="separator">|</span>
+                    <a href="#">利用規約</a>
+                </div>
+                <p class="footer-copyright">
+                    &copy; 2026 WAXPRO by 株式会社independence. All Rights Reserved.
+                </p>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
+    <!-- ページトップボタン -->
+    <button class="page-top" id="pageTop">
+        <i class="fas fa-chevron-up"></i>
     </button>
 
-    <!-- AOS Animation Library -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    
-    <!-- Custom JavaScript -->
-    <script src="js/script.js"></script>
     <script src="js/wax-product.js"></script>
 </body>
 </html>
+
