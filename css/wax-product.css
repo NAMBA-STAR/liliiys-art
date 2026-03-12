@@ -1215,8 +1215,7 @@ section {
 }
 
 /* Use the default LINE brand green for logo display */
-.line-cta-title .fa-line,
-.footer-social .fa-line {
+.line-cta-title .fa-line {
     color: #06C755;
 }
 
@@ -1618,6 +1617,23 @@ section {
 .social-link:hover {
     background-color: var(--primary-color);
     transform: translateY(-3px);
+}
+
+/* Footer social icons: use each platform's brand color */
+.footer-social .fa-line {
+    color: #06C755;
+}
+
+.footer-social .fa-instagram {
+    color: #E4405F;
+}
+
+.footer-social .fa-facebook {
+    color: #1877F2;
+}
+
+.footer-social .fa-twitter {
+    color: #1DA1F2;
 }
 
 .footer-bottom {
