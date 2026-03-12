@@ -1216,7 +1216,6 @@ section {
 
 /* Use the default LINE brand green for logo display */
 .line-cta-title .fa-line,
-.contact-info-icon .fa-line,
 .footer-social .fa-line {
     color: #06C755;
 }
@@ -1496,6 +1495,17 @@ section {
 
 .contact-info-icon i {
     font-size: 36px;
+}
+
+/* Make the LINE contact card use official-like icon treatment */
+.contact-info-card.line-official .contact-info-icon {
+    background: #06C755;
+    color: #FFFFFF;
+}
+
+.contact-info-card.line-official .contact-info-icon .fa-line {
+    color: #FFFFFF;
+    font-size: 32px;
 }
 
 .contact-info-card h3 {
