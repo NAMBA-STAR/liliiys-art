@@ -25,44 +25,6 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        body {
-            opacity: 0;
-            transition: opacity 160ms ease;
-        }
-        body.page-ready {
-            opacity: 1;
-        }
-        html.is-page-transitioning body {
-            opacity: 0;
-        }
-    </style>
-    <script>
-        (function () {
-            function markReady() {
-                if (document.body) {
-                    document.body.classList.add('page-ready');
-                }
-            }
-            document.addEventListener('DOMContentLoaded', markReady);
-            window.addEventListener('pageshow', markReady);
-            document.addEventListener('click', function (e) {
-                var a = e.target.closest('a[href]');
-                if (!a) return;
-                var href = a.getAttribute('href');
-                if (!href || href.charAt(0) === '#') return;
-                if (a.target === '_blank' || a.hasAttribute('download')) return;
-                if (/^(mailto:|tel:|javascript:)/i.test(href)) return;
-                var url = new URL(a.href, window.location.href);
-                if (url.origin !== window.location.origin) return;
-                e.preventDefault();
-                document.documentElement.classList.add('is-page-transitioning');
-                setTimeout(function () {
-                    window.location.href = url.href;
-                }, 120);
-            });
-        })();
-    </script>
 </head>
 <body>
     <!-- Header -->

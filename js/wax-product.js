@@ -338,40 +338,6 @@ window.addEventListener('scroll', function() {
 });
 
 // =========================================
-// ページ読み込み時のアニメーション
-// =========================================
-window.addEventListener('load', function() {
-    // ページ読み込み完了時の処理
-    document.body.classList.add('loaded');
-    
-    // ヒーローセクションのアニメーション
-    const heroText = document.querySelector('.hero-text');
-    const heroImage = document.querySelector('.hero-image');
-    
-    if (heroText) {
-        heroText.style.opacity = '0';
-        heroText.style.transform = 'translateY(30px)';
-        
-        setTimeout(function() {
-            heroText.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-            heroText.style.opacity = '1';
-            heroText.style.transform = 'translateY(0)';
-        }, 100);
-    }
-    
-    if (heroImage) {
-        heroImage.style.opacity = '0';
-        heroImage.style.transform = 'translateY(30px)';
-        
-        setTimeout(function() {
-            heroImage.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-            heroImage.style.opacity = '1';
-            heroImage.style.transform = 'translateY(0)';
-        }, 300);
-    }
-});
-
-// =========================================
 // タッチデバイス対応
 // =========================================
 if ('ontouchstart' in window || navigator.maxTouchPoints) {

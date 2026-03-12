@@ -346,17 +346,6 @@ if ('IntersectionObserver' in window) {
 }
 
 // ==========================================
-// Page Load Animation
-// ==========================================
-window.addEventListener('load', () => {
-    document.body.style.opacity = '0';
-    setTimeout(() => {
-        document.body.style.transition = 'opacity 0.5s ease';
-        document.body.style.opacity = '1';
-    }, 100);
-});
-
-// ==========================================
 // Console Welcome Message
 // ==========================================
 console.log('%cLilly\'s art Shirokanedai', 'color: #9d8b6c; font-size: 24px; font-weight: bold;');
