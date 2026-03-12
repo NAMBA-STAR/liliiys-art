@@ -1604,18 +1604,20 @@ section {
 .social-link {
     width: 45px;
     height: 45px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.28);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--bg-white);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
     transition: var(--transition);
     text-decoration: none;
 }
 
 .social-link:hover {
-    background-color: var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.32);
     transform: translateY(-3px);
 }
 
