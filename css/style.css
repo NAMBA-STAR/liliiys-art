@@ -998,7 +998,10 @@ section {
     }
     
     .hero {
-        min-height: 500px;
+        min-height: 100vh;
+        height: auto;
+        align-items: flex-start;
+        padding-top: calc(130px + env(safe-area-inset-top));
     }
     
     .hero-title {
