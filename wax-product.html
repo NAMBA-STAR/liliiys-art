@@ -489,10 +489,12 @@
                     </ul>
                 </div>
                 <div class="line-cta-button-wrapper">
-                    <a href="#" class="line-button" target="_blank">
-                        <i class="fab fa-line"></i>
-                        <span>友だち追加</span>
-                    </a>
+                    <div class="line-it-button" data-lang="ja" data-type="friend" data-lineid="@waxpro" style="display: none;"></div>
+                    <noscript>
+                        <a href="https://line.me/R/ti/p/@waxpro" target="_blank" rel="noopener noreferrer" aria-label="LINE公式アカウントを友だち追加">
+                            <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36">
+                        </a>
+                    </noscript>
                     <p class="line-cta-note">※外部サイト（LINE）へ移動します</p>
                 </div>
             </div>
@@ -729,6 +731,7 @@
         <i class="fas fa-chevron-up"></i>
     </button>
 
+    <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async defer></script>
     <script src="js/wax-product.js"></script>
 </body>
 </html>
