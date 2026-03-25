@@ -610,7 +610,11 @@
                 <p class="section-subtitle">ご質問・サンプル請求はこちらから</p>
             </div>
             <div class="contact-wrapper">
-                <form class="contact-form fade-in" id="contactForm">
+                <form class="contact-form fade-in" id="contactForm" name="wax-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="wax-contact">
+                    <p hidden>
+                        <label>Do not fill this out: <input name="bot-field"></label>
+                    </p>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="salonName">サロン名 <span class="required">*</span></label>
@@ -682,6 +686,15 @@
                         <h3>LINE公式アカウント</h3>
                         <p class="contact-info-detail"><a href="https://lin.ee/VQQdYSy" target="_blank" rel="noopener noreferrer">友だち追加はこちら</a></p>
                         <p class="contact-info-note">お気軽にメッセージをお送りください</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h3>Instagram</h3>
+                        <p class="contact-info-detail"><a href="https://www.instagram.com/lilly_s_art_academy?igsh=MTdmNGFqZjZ2emM5&utm_source=qr" target="_blank" rel="noopener noreferrer">@lilly_s_art_academy</a></p>
+                        <p class="contact-info-note">最新情報を配信しています</p>
                     </div>
                 </div>
             </div>
