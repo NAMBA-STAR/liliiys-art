@@ -1507,6 +1507,16 @@ section {
     font-size: 32px;
 }
 
+/* Instagram icon uses brand-like gradient for quick visual recognition */
+.contact-info-card.instagram-official .contact-info-icon {
+    background: linear-gradient(135deg, #f58529 0%, #dd2a7b 55%, #8134af 100%);
+    color: #FFFFFF;
+}
+
+.contact-info-card.instagram-official .contact-info-icon .fa-instagram {
+    color: #FFFFFF;
+}
+
 .contact-info-card h3 {
     font-size: 18px;
     color: var(--text-dark);
@@ -1518,6 +1528,15 @@ section {
     font-weight: 600;
     color: var(--primary-color);
     margin-bottom: 5px;
+}
+
+.contact-info-detail a {
+    color: inherit;
+    text-decoration-color: rgba(107, 78, 45, 0.5);
+}
+
+.contact-info-detail a:hover {
+    color: var(--primary-dark);
 }
 
 .contact-info-note {
