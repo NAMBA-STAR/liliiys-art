@@ -1,0 +1,38 @@
+.contact .hero-buttons {
+    justify-content: center;
+    margin: 0 auto 24px;
+    max-width: 800px;
+}
+
+.contact .hero-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact .hero-buttons .btn i {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.contact .hero-buttons .btn-primary .fa-line {
+    background: #06C755;
+    color: #ffffff;
+}
+
+.contact .hero-buttons .btn-secondary .fa-instagram {
+    background: linear-gradient(135deg, #f58529 0%, #dd2a7b 55%, #8134af 100%);
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .contact .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
